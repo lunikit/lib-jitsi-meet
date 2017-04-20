@@ -707,6 +707,10 @@ JitsiConference.prototype.kickParticipant = function (id) {
     this.room.kick(participant.getJid());
 };
 
+JitsiConference.prototype.kickParticipantByJid = function (id) {
+    this.room.kick(id);
+};
+
 /**
  * Mutes a participant.
  * @param {string} id The id of the participant to mute.
